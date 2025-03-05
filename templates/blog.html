@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="display-4">Топ сериалов 2023</h1>
+    <p class="lead">Список лучших сериалов, которые стоит посмотреть в этом году:</p>
+    <div class="list-group">
+        <a href="https://thrones-online.com" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center">
+                <img src="{{ url_for('static', filename='images/covers/cover-1.jpg') }}"
+                     class="img-fluid cover-thumbnail me-3"
+                     alt="Игра престолов: Дом Дракона">
+                <div>
+                    <h5 class="mb-1">1. Игра престолов: Дом Дракона</h5>
+                    <p class="mb-1">Продолжение легендарной саги о борьбе за Железный Трон.</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://stranger-things.ru" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center">
+                <img src="{{ url_for('static', filename='images/covers/cover-2.jpg') }}"
+                     class="img-fluid cover-thumbnail me-3"
+                     alt="Очень странные дела">
+                <div>
+                    <h5 class="mb-1">2. Очень странные дела</h5>
+                    <p class="mb-1">Финальный сезон культового сериала о приключениях подростков.</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://okko.tv/serial/the-white-lotus" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center">
+                <img src="{{ url_for('static', filename='images/covers/cover-3.jpg') }}"
+                     class="img-fluid cover-thumbnail me-3"
+                     alt="Белый лотос">
+                <div>
+                    <h5 class="mb-1">3. Белый лотос</h5>
+                    <p class="mb-1">Сатира на жизнь богатых и знаменитых в роскошном отеле.</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://mandalorec.net" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center">
+                <img src="{{ url_for('static', filename='images/covers/cover-4.jpg') }}"
+                     class="img-fluid cover-thumbnail me-3"
+                     alt="Мандалорец">
+                <div>
+                    <h5 class="mb-1">4. Мандалорец</h5>
+                    <p class="mb-1">Приключения одинокого наемника в далекой галактике.</p>
+                </div>
+            </div>
+        </a>
+        <a href="http://euphoria-serial.com" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center">
+                <img src="{{ url_for('static', filename='images/covers/cover-5.jpg') }}"
+                     class="img-fluid cover-thumbnail me-3"
+                     alt="Эйфория">
+                <div>
+                    <h5 class="mb-1">5. Эйфория</h5>
+                    <p class="mb-1">Драма о жизни подростков, их проблемах и поисках себя.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+{% endblock %}
